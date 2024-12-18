@@ -1,0 +1,1 @@
+DROP TABLE `desensitization_rule_config`;
