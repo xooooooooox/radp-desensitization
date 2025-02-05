@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>space.x9x.radp</groupId>
+        <artifactId>radp-parent</artifactId>
+        <version>0.9</version>
+    </parent>
+    <groupId>space.x9x.solutions</groupId>
+    <artifactId>radp-desensitization</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>radp-desensitization-sdk</module>
+        <module>radp-desensitization-sdk-starter</module>
+        <module>radp-desensitization-admin</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>space.x9x.solutions</groupId>
+                <artifactId>radp-desensitization-admin-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>space.x9x.solutions</groupId>
+                <artifactId>radp-desensitization-admin-domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>space.x9x.solutions</groupId>
+                <artifactId>radp-desensitization-admin-infrastructure</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>space.x9x.solutions</groupId>
+                <artifactId>radp-desensitization-admin-trigger</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>space.x9x.solutions</groupId>
+                <artifactId>radp-desensitization-admin-types</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>space.x9x.solutions</groupId>
+                <artifactId>radp-desensitization-sdk</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>space.x9x.solutions</groupId>
+                <artifactId>radp-desensitization-sdk-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>
