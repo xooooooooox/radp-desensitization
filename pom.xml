@@ -13,6 +13,12 @@
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <properties>
+        <scm.git.web_url>https://github.com/xooooooooox/radp-desensitization.git</scm.git.web_url>
+        <scm.git.url>git@github.com:xooooooooox/radp-desensitization.git</scm.git.url>
+        <scm.issue.url>https://github.com/xooooooooox/radp-desensitization/issues</scm.issue.url>
+    </properties>
+
     <modules>
         <module>radp-desensitization-sdk</module>
         <module>radp-desensitization-sdk-starter</module>
