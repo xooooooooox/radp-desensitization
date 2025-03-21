@@ -29,4 +29,9 @@ public class OfflineDesensitizationRuleService extends DefaultDesensitizationRul
         log.info("SDK 以[离线模式]运行: {}", "loadAllRulesFromRemote");
         return Collections.emptyList();
     }
+
+    @Override
+    public DesensitizationRule getRuleByRuleKey(String ruleKey) {
+        return null;
+    }
 }
