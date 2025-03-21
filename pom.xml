@@ -19,6 +19,13 @@
         <scm.issue.url>https://github.com/xooooooooox/radp-desensitization/issues</scm.issue.url>
     </properties>
 
+    <scm>
+        <url>${scm.git.web_url}</url>
+        <connection>scm:git:${scm.git.url}</connection>
+        <developerConnection>scm:git:${scm.git.url}</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
     <modules>
         <module>radp-desensitization-sdk</module>
         <module>radp-desensitization-sdk-starter</module>
